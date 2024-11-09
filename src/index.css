@@ -34,3 +34,23 @@
 	--color-gray-400: #767676;
 	--color-gray-600: #555555;
 }
+
+.fill-gray {
+	fill: var(--color-gray-300);
+}
+
+.fill-accent {
+	fill: var(--color-brand-accent);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
