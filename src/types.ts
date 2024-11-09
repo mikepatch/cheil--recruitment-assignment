@@ -1,39 +1,66 @@
-export type Category = 'Pralki';
+export type Category = 'pralki' | 'lodówki' | 'telewizory';
 
 export type EnergyClass = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
 
+export type Currency = 'PLN' | 'EUR' | 'USD';
+
+export type MeasureUnit = 'cm' | 'mm';
+
+export type ProductDimensions =
+	`${string | number} x ${string | number} x ${string | number} ${MeasureUnit}`;
+
+export type SpecificationValue = string | number | boolean;
+
 export type Product = {
-	id: string;
+	id: number;
 	name: string;
 	category: Category;
-	specifications: ProductSpecs;
-	price: Price;
+	price: ProductPrice;
+	specifications: BaseProductSpec;
+	features?: ProductFeature[];
 	energyClass: EnergyClass;
-	installmentPlan?: Installment;
+	installmentPlan?: InstallmentPlan;
+	popularity: number;
 };
 
-export type ProductSpecs = {
-	capacityKg: number;
-	dimensions: Dimensions;
-	features: string[];
-	color: string;
+export type BaseProductSpec = {
+	dimensions?: ProductDimensions;
+} & Record<string, SpecificationValue>;
+
+export type ProductFeature = {
+	id: number;
+	name: string;
 };
 
-export type Dimensions = {
-	depth: number;
-	width: number;
-	height: number;
-};
-
-export type Price = {
+export type ProductPrice = {
 	amount: number;
-	currency: string;
+	currency: Currency;
 	validFrom?: Date;
 	validTo?: Date;
 };
 
-export type Installment = {
+export type InstallmentPlan = {
 	monthlyAmount: number;
 	months: number;
 	currency: string;
+};
+
+export type FilterBy = {
+	id: string;
+	label: string;
+	options: Array<{ value: string; label: string }>;
+};
+
+export type SortBy = FilterBy;
+
+export type CategorySpecAttribute = {
+	id: string;
+	label: string;
+};
+
+export type CategoryConfig = {
+	sorting: SortBy;
+	filters: FilterBy[];
+	specificationAttributes: CategorySpecAttribute[];
+	productFeatures: ProductFeature[];
 };
