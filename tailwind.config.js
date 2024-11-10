@@ -9,6 +9,7 @@ export default {
 				'brand-accent': '#007aff',
 				'bg-primary': '#f8f8f8',
 				'bg-secondary': '#f3f3f3',
+				'bg-tertiary': '#FDFDFD',
 				'gray-300': '#8d8d8d',
 				'gray-400': '#767676',
 				'gray-600': '#555555',
