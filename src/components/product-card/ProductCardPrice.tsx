@@ -15,7 +15,7 @@ export const ProductCardPrice = ({ price }: PriceProps) => {
 	const [firstDigit, ...restDigits] = amount.split('');
 
 	return (
-		<p className="mt-1 flex items-start font-bold leading-none">
+		<div className="mt-1 flex items-start font-bold leading-none">
 			<span className="sr-only">Cena:</span>
 			<span className="text-[40px] font-bold tracking-tighter">
 				{firstDigit} {restDigits}
@@ -24,6 +24,6 @@ export const ProductCardPrice = ({ price }: PriceProps) => {
 				<span className="translate-y-1 transform text-sm">{decimals}</span>
 				<span className="text-sm">{currency}</span>
 			</div>
-		</p>
+		</div>
 	);
 };
