@@ -15,9 +15,7 @@ export const FilterSection = () => {
 	return (
 		<aside>
 			<form>
-				<div className="pb-2 pt-6 text-center" role="search">
-					<SearchBar onChange={setSearchQuery} />
-				</div>
+				<SearchBar onChange={setSearchQuery} />
 				<div role="group" className="gap-4 md:flex">
 					<CustomSelect
 						id={sorting.id}
