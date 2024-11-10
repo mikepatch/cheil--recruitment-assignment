@@ -89,8 +89,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3799,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -115,8 +115,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 2999,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -141,8 +141,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3689,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -167,8 +167,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3099,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -193,8 +193,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3199,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -219,8 +219,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 2999,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -245,8 +245,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3799,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -271,8 +271,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 2999,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -297,8 +297,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3689,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -323,8 +323,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3099,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',
@@ -349,8 +349,8 @@ export const PRODUCTS: Product[] = [
 		price: {
 			amount: 3199,
 			currency: 'PLN',
-			validFrom: new Date('2022-09-15'),
-			validTo: new Date('2022-09-21'),
+			validFrom: '2022-09-15',
+			validTo: '2022-09-21',
 		},
 		specifications: {
 			color: 'biały',

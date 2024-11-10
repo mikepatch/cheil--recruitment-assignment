@@ -36,8 +36,8 @@ export type ProductFeature = {
 export type ProductPrice = {
 	amount: number;
 	currency: Currency;
-	validFrom?: Date;
-	validTo?: Date;
+	validFrom?: string;
+	validTo?: string;
 };
 
 export type InstallmentPlan = {
