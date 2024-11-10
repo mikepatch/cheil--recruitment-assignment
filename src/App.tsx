@@ -1,11 +1,12 @@
 import { Header } from '@/components/header/Header';
 import { ProductListing } from '@/components/product-listing/ProductListing';
 import { FilterSection } from '@/components/filter-section/FilterSection';
-import { ProductsProvider } from '@/context/ProductsContext';
+import { Provider } from 'react-redux';
+import { store } from '@/store';
 
 function App() {
 	return (
-		<ProductsProvider>
+		<Provider store={store}>
 			<Header />
 			<main className="bg-bg-primary pb-14">
 				<div className="container mx-auto max-w-[1024px] px-6" role="main">
@@ -13,7 +14,7 @@ function App() {
 					<ProductListing />
 				</div>
 			</main>
-		</ProductsProvider>
+		</Provider>
 	);
 }
 

@@ -3,7 +3,8 @@ import { ProductCardEnergyLabel } from '@/components/product-card/ProductCardEne
 import { ProductCardHeader } from '@/components/product-card/ProductCardHeader';
 import { ProductCardPriceSection } from '@/components/product-card/ProductCardPriceSection';
 import { ProductCardSpecs } from '@/components/product-card/ProductCardSpecs';
-import { useProducts } from '@/hooks/useProducts';
+import { addToSelectedProducts } from '@/features/products/productsSlice';
+import { useAppDispatch, useAppSelector } from '@/hooks/useRedux';
 import { type Product } from '@/shared/types';
 
 type ProductCardProps = {
@@ -11,11 +12,12 @@ type ProductCardProps = {
 };
 
 export const ProductCard = ({ product }: ProductCardProps) => {
-	const { selectedProductIds, setSelectedProductIds } = useProducts();
+	const dispatch = useAppDispatch();
+	const selectedProductIds = useAppSelector((state) => state.products.selectedProductIds);
 	const isProductSelected = selectedProductIds.includes(product.id);
 
 	const handleSelectProduct = () => {
-		setSelectedProductIds(product.id);
+		dispatch(addToSelectedProducts(product.id));
 	};
 
 	return (

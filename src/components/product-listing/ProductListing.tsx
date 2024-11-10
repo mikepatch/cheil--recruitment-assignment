@@ -1,12 +1,13 @@
 import { LoadMoreButton } from '@/components/product-listing/LoadMoreButton';
 import { ProductList } from '@/components/product-listing/ProductList';
 import { ResultsCounter } from '@/components/product-listing/ResultsCounter';
-import { useProducts } from '@/hooks/useProducts';
+import { selectFilteredProducts } from '@/features/products/productsSelectors';
+import { useAppSelector } from '@/hooks/useRedux';
 import { type Product } from '@/shared/types';
 import { useEffect, useState } from 'react';
 
 export const ProductListing = () => {
-	const { products } = useProducts();
+	const products = useAppSelector(selectFilteredProducts);
 	const initialProductsCount = 6;
 	const [displayedProducts, setDisplayedProducts] = useState<Product[]>([]);
 	const [visibleProductsCount, setVisibleProductsCount] = useState<number>(initialProductsCount);
