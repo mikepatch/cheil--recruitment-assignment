@@ -109,7 +109,7 @@ export const ProductsProvider = ({ children }: { children: ReactNode }) => {
 	};
 
 	const handleSelectProductId = (productId: number) => {
-		const isProductIdSelected = selectedProductIds.find((id) => id === productId);
+		const isProductIdSelected = selectedProductIds.includes(productId);
 
 		if (isProductIdSelected) {
 			setSelectedProductIds((prev) => prev.filter((id) => id !== productId));
