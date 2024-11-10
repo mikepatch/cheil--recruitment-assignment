@@ -48,7 +48,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 						{price.validTo ? new Date(price.validTo).toLocaleDateString('pl-PL') : ''}
 					</p>
 					<p>
-						<span className="visually-hidden">Cena:</span>
+						<span className="sr-only">Cena:</span>
 						{new Intl.NumberFormat('pl-PL', {
 							style: 'currency',
 							currency: price.currency,

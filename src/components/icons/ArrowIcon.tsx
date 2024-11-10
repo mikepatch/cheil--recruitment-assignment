@@ -5,7 +5,7 @@ type ArrowIconProps = {
 
 export const ArrowIcon = ({ color = 'gray', size = 'lg' }: ArrowIconProps) => {
 	const sizePx = size === 'lg' ? '13' : '7';
-	const colorClass = color === 'gray' ? 'fill-gray' : 'fill-accent';
+	const colorClass = color === 'gray' ? 'fill-gray-300' : 'fill-brand-accent';
 
 	return (
 		<svg

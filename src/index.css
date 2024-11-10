@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
 	font-family: 'SamsungOne';
 	src: local('SamsungOne-400'), url('./assets/fonts/SamsungOne/SamsungOne-400.ttf');
@@ -19,38 +23,4 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	/* Brand Colors */
-	--color-brand-primary: #1428a0;
-	--color-brand-secondary: #1c1c1c;
-	--color-brand-accent: #007aff;
-
-	/* Background Colors */
-	--color-bg-primary: #f8f8f8;
-	--color-bg-secondary: #f3f3f3;
-
-	/* Grayscale Colors */
-	--color-gray-300: #8d8d8d;
-	--color-gray-400: #767676;
-	--color-gray-600: #555555;
-}
-
-.fill-gray {
-	fill: var(--color-gray-300);
-}
-
-.fill-accent {
-	fill: var(--color-brand-accent);
-}
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border: 0;
 }

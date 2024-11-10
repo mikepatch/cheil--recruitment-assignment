@@ -5,7 +5,7 @@ type SearchBarProps = {
 export const SearchBar = ({ onChange }: SearchBarProps) => {
 	return (
 		<>
-			<label className="visually-hidden" htmlFor="product-search">
+			<label className="sr-only" htmlFor="product-search">
 				Wyszukaj urządzenie
 			</label>
 			<input
