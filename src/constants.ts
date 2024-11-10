@@ -28,7 +28,7 @@ export const CATEGORY_CONFIG: Partial<Record<Category, CategoryConfig>> = {
 				id: 'features',
 				label: 'Funkcje',
 				options: [
-					{ value: 'all', label: 'Wszystkie' },
+					{ value: 'all', label: 'Pokaż wszystkie' },
 
 					{ value: '0', label: 'Drzwi AddWash™' },
 					{ value: '1', label: 'Panel AI Control' },
@@ -40,7 +40,7 @@ export const CATEGORY_CONFIG: Partial<Record<Category, CategoryConfig>> = {
 				id: 'energyClass',
 				label: 'Klasa energetyczna',
 				options: [
-					{ value: 'all', label: 'Wszystkie' },
+					{ value: 'all', label: 'Pokaż wszystkie' },
 					{ value: 'A', label: 'A' },
 					{ value: 'B', label: 'B' },
 					{ value: 'C', label: 'C' },
@@ -54,7 +54,7 @@ export const CATEGORY_CONFIG: Partial<Record<Category, CategoryConfig>> = {
 				id: 'capacity',
 				label: 'Pojemność',
 				options: [
-					{ value: 'all', label: 'Wszystkie' },
+					{ value: 'all', label: 'Pokaż wszystkie' },
 					{ value: '9', label: '9kg' },
 					{ value: '8', label: '8kg' },
 					{ value: '10.5', label: '10.5kg' },

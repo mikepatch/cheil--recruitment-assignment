@@ -7,7 +7,7 @@ type ProductsContextType = {
 	searchQuery: string;
 	setSearchQuery: (query: string) => void;
 	activeFilters: Record<string, string>;
-	setActiveFilters: (filterId: string, value: string) => void;
+	setActiveFilters: (value: string, filterId?: string) => void;
 	sorting: { by: string; direction: 'asc' | 'desc' };
 	setSorting: (value: string) => void;
 	selectedProductIds: number[];
@@ -82,7 +82,9 @@ export const ProductsProvider = ({ children }: { children: ReactNode }) => {
 		return products;
 	}, [PRODUCTS, searchQuery, activeFilters, sorting]);
 
-	const handleFilterChange = (filterId: string, value: string) => {
+	const handleFilterChange = (value: string, filterId?: string) => {
+		if (!filterId) return;
+
 		setActiveFilters((prev) => ({
 			...prev,
 			[filterId]: value,
