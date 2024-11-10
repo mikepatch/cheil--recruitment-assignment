@@ -13,7 +13,7 @@ export const ProductCardPriceSection = ({
 	installmentPlan,
 }: ProductCardPriceSectionProps) => {
 	return (
-		<section aria-label="Informacje cenowe">
+		<section aria-label="Informacje cenowe" className="text-xs">
 			<ProductCardPriceValidDate price={price} />
 			<ProductCardPrice price={price} />
 			{installmentPlan ? <ProductCardPriceInstallments installmentPlan={installmentPlan} /> : ''}

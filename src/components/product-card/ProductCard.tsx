@@ -19,16 +19,13 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 	};
 
 	return (
-		<div className="flex flex-col rounded-2xl bg-white px-6 py-4">
-			<ProductCardHeader
-				productName={product.name}
-				productImgSrc={product.imgSrc}
-			/>
-			<section className="text-xs">
+		<div className="flex h-full flex-col rounded-2xl bg-white px-6 py-4">
+			<ProductCardHeader productName={product.name} productImgSrc={product.imgSrc} />
+			<section className="flex-grow text-xs">
 				<ProductCardSpecs productData={product} />
 				<ProductCardEnergyLabel energyClass={product.energyClass} />
-				<ProductCardPriceSection price={product.price} installmentPlan={product.installmentPlan} />
 			</section>
+			<ProductCardPriceSection price={product.price} installmentPlan={product.installmentPlan} />
 			<ProductCardButton isProductSelected={isProductSelected} onChange={handleSelectProduct} />
 		</div>
 	);
