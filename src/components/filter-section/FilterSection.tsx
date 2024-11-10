@@ -1,6 +1,6 @@
-import { Filter } from '@/components/filter-section/Filter';
+import { CustomSelect } from '@/components/filter-section/CustomSelect';
 import { SearchBar } from '@/components/filter-section/SearchBar';
-import { Sort } from '@/components/filter-section/Sort';
+
 import { CATEGORY_CONFIG, CURRENT_CATEGORY } from '@/constants';
 import { useProducts } from '@/hooks/useProducts';
 
@@ -10,18 +10,29 @@ export const FilterSection = () => {
 
 	if (!categoryConfig) return;
 
+	const { sorting, filters } = categoryConfig;
+
 	return (
 		<aside>
 			<form>
-				<div role="search">
+				<div className="pb-2 pt-6 text-center" role="search">
 					<SearchBar onChange={setSearchQuery} />
 				</div>
-				<div aria-label="Sortowanie">
-					<Sort sortBy={categoryConfig.sorting} onChange={setSorting} />
-				</div>
-				<div role="group" aria-label="Filtrowanie">
-					{categoryConfig.filters.map((filter) => (
-						<Filter key={`filter-${filter.id}`} filterBy={filter} onChange={setActiveFilters} />
+				<div role="group" className="gap-4 md:flex">
+					<CustomSelect
+						id={sorting.id}
+						label={sorting.label}
+						options={sorting.options}
+						onChange={setSorting}
+					/>
+					{filters.map((filter) => (
+						<CustomSelect
+							key={`filter-${filter.id}`}
+							id={filter.id}
+							label={filter.label}
+							options={filter.options}
+							onChange={setActiveFilters}
+						/>
 					))}
 				</div>
 			</form>
