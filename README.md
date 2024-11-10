@@ -1,50 +1,115 @@
-# React + TypeScript + Vite
+# Cheil - Recruitment Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project image](public/images/readme/main.png)
 
-Currently, two official plugins are available:
+A React application featuring a product listing page for a product configurator, built with modern web technologies and best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Features
 
-## Expanding the ESLint configuration
+- **Product Filtering & Sorting**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - Search products by name
+  - Sort by price, capacity, and popularity
+  - Filter by features, energy class, and capacity
+  - Debounced search for better performance
 
-- Configure the top-level `parserOptions` property like this:
+- **Responsive Design**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+  - Mobile-first approach
+  - Grid layout adapting to different screen sizes
+  - Tailwind CSS for styling
+
+- **Accessibility**
+
+  - ARIA labels and roles
+  - Keyboard navigation support
+  - Screen reader friendly
+  - Semantic HTML structure
+
+- **User Experience**
+  - Loading skeletons
+  - Load more products functionality
+
+## 🛠 Tech Stack
+
+- React
+- TypeScript
+- Redux Toolkit
+- TailwindCSS
+- Vite
+
+## 🖼️ Screenshots
+**Filters:**
+
+![Filters](public/images/readme/filters.png)
+**Mobile filters:**
+
+![Mobile filters](public/images/readme/mobile-1.png)
+
+**Mobile listing:**
+
+![Mobile product listing](public/images/readme/mobile-2.png)
+
+
+## 🏗 Project Structure
+
+```
+src/
+├── components/ # UI components
+├── features/ # Redux slices and selectors
+├── hooks/ # Custom React hooks
+├── shared/ # Shared types and constants
+└── store.ts # Redux store configuration
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔧 Setup & Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+2. Install dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Run development server:
+
+```bash
+npm run dev
+```
+
+## 🧪 Key Technical Decisions
+
+1. **State Management**
+
+   - Redux Toolkit for global state management
+   - Custom selectors for efficient filtering and sorting
+
+2. **Performance Optimizations**
+
+   - Debounced search input
+   - Lazy loading images
+   - Incremental product loading
+
+3. **Type Safety**
+   - Strict TypeScript configuration
+   - Comprehensive type definitions for all components
+
+## 🎨 Styling Approach
+
+- Tailwind CSS for utility-first styling
+- Custom color palette matching provided design in Figma
+
+## 📱 Responsive Design
+
+- Mobile: Single column layout
+- Tablet: Two columns grid
+- Desktop: Three columns grid
+
+## 🌟 Additional Features
+
+- Custom select component with keyboard navigation
+
+## 🔍 Future Improvements
+
+1. Image optimization
+2. General performance optimizations
