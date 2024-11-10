@@ -1,4 +1,4 @@
-import { CURRENT_CATEGORY } from '@/constants';
+import { CURRENT_CATEGORY } from '@/shared/constants';
 
 export const Header = () => {
 	return (

@@ -1,7 +1,7 @@
 import { CustomSelect } from '@/components/filter-section/CustomSelect';
 import { SearchBar } from '@/components/filter-section/SearchBar';
 
-import { CATEGORY_CONFIG, CURRENT_CATEGORY } from '@/constants';
+import { CATEGORY_CONFIG, CURRENT_CATEGORY } from '@/shared/constants';
 import { useProducts } from '@/hooks/useProducts';
 
 export const FilterSection = () => {

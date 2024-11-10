@@ -1,6 +1,6 @@
 import { createContext, useState, ReactNode, useMemo } from 'react';
-import { PRODUCTS, CATEGORY_CONFIG, CURRENT_CATEGORY } from '@/constants';
-import { type Product } from '@/types';
+import { PRODUCTS, CATEGORY_CONFIG, CURRENT_CATEGORY } from '@/shared/constants';
+import { type Product } from '@/shared/types';
 
 type ProductsContextType = {
 	products: Product[];

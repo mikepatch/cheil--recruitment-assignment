@@ -1,4 +1,4 @@
-import { type InstallmentPlan } from '@/types';
+import { type InstallmentPlan } from '@/shared/types';
 
 type ProductCardPriceInstallmentsProps = {
 	installmentPlan: InstallmentPlan;

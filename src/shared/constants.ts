@@ -1,4 +1,4 @@
-import { type Category, type CategoryConfig, type Product } from '@/types';
+import { type Category, type CategoryConfig, type Product } from '@/shared/types';
 
 export const CURRENT_CATEGORY = 'pralki';
 

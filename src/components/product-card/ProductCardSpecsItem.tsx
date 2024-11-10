@@ -1,4 +1,4 @@
-import { type SpecificationValue } from '@/types';
+import { type SpecificationValue } from '@/shared/types';
 
 type ProductCardSpecsItemProps = {
 	attributeKey: string;

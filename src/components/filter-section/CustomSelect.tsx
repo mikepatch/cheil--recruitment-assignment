@@ -1,6 +1,6 @@
 import { ArrowIcon } from '@/components/icons/ArrowIcon';
 import { useClickOutside } from '@/hooks/useClickOutside';
-import { FilterBy } from '@/types';
+import { FilterBy } from '@/shared/types';
 import { useRef, useState } from 'react';
 
 type CustomSelectProps = {
@@ -66,7 +66,7 @@ export const CustomSelect = ({ id, label, options, onChange }: CustomSelectProps
 					id={`${id}-options`}
 					role="listbox"
 					aria-labelledby={`${id}-label`}
-					className="bg-bg-tertiary absolute top-full z-10 w-full text-xs transform rounded-sm shadow-md"
+					className="bg-bg-tertiary absolute top-full z-10 w-full transform rounded-sm text-xs shadow-md"
 				>
 					{options.map((option, index) => (
 						<li

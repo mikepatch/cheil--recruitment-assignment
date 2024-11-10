@@ -2,7 +2,7 @@ import { LoadMoreButton } from '@/components/product-listing/LoadMoreButton';
 import { ProductList } from '@/components/product-listing/ProductList';
 import { ResultsCounter } from '@/components/product-listing/ResultsCounter';
 import { useProducts } from '@/hooks/useProducts';
-import { type Product } from '@/types';
+import { type Product } from '@/shared/types';
 import { useEffect, useState } from 'react';
 
 export const ProductListing = () => {

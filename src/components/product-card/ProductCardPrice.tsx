@@ -1,4 +1,4 @@
-import { type ProductPrice } from '@/types';
+import { type ProductPrice } from '@/shared/types';
 
 type PriceProps = {
 	price: ProductPrice;

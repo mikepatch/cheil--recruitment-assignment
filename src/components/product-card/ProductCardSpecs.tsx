@@ -1,6 +1,6 @@
 import { ProductCardSpecsItem } from '@/components/product-card/ProductCardSpecsItem';
-import { CATEGORY_CONFIG } from '@/constants';
-import { type Product } from '@/types';
+import { CATEGORY_CONFIG } from '@/shared/constants';
+import { type Product } from '@/shared/types';
 
 type ProductCardSpecsProps = {
 	productData: Product;

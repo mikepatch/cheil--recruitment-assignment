@@ -1,4 +1,4 @@
-import { type ProductPrice } from '@/types';
+import { type ProductPrice } from '@/shared/types';
 
 type ProductCardPriceValidDateProps = {
 	price: ProductPrice;
@@ -6,8 +6,8 @@ type ProductCardPriceValidDateProps = {
 
 export const ProductCardPriceValidDate = ({ price }: ProductCardPriceValidDateProps) => {
 	const validFrom = price.validFrom ? new Date(price.validFrom).toLocaleDateString('pl-PL') : '';
-    const validTo = price.validTo ? new Date(price.validTo).toLocaleDateString('pl-PL') : '';
-    
+	const validTo = price.validTo ? new Date(price.validTo).toLocaleDateString('pl-PL') : '';
+
 	return (
 		<p className="text-gray-400">
 			Cena obowiązuje: <span>{validFrom}</span> - <span>{validTo}</span>

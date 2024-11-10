@@ -4,7 +4,7 @@ import { ProductCardHeader } from '@/components/product-card/ProductCardHeader';
 import { ProductCardPriceSection } from '@/components/product-card/ProductCardPriceSection';
 import { ProductCardSpecs } from '@/components/product-card/ProductCardSpecs';
 import { useProducts } from '@/hooks/useProducts';
-import { type Product } from '@/types';
+import { type Product } from '@/shared/types';
 
 type ProductCardProps = {
 	product: Product;
