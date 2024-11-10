@@ -50,7 +50,6 @@ A React application featuring a product listing page for a product configurator,
 
 ![Mobile product listing](public/images/readme/mobile-2.png)
 
-
 ## 🏗 Project Structure
 
 ```
