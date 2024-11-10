@@ -78,11 +78,14 @@ export const CATEGORY_CONFIG: Partial<Record<Category, CategoryConfig>> = {
 	},
 };
 
+const productFeatures = CATEGORY_CONFIG.pralki?.productFeatures!;
+
 export const PRODUCTS: Product[] = [
 	{
 		id: 0,
 		name: 'WW90T754ABT, Pralka QuickDrive™, 9 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/0.png',
 		price: {
 			amount: 3799,
 			currency: 'PLN',
@@ -94,7 +97,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [productFeatures[0], productFeatures[3]],
 		energyClass: 'A',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -107,6 +110,8 @@ export const PRODUCTS: Product[] = [
 		id: 1,
 		name: 'WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/1.png',
+
 		price: {
 			amount: 2999,
 			currency: 'PLN',
@@ -118,7 +123,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [productFeatures[1], productFeatures[2], productFeatures[3]],
 		energyClass: 'B',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -131,6 +136,8 @@ export const PRODUCTS: Product[] = [
 		id: 2,
 		name: 'WW90T654DLH, Pralka EcoBubble™, 9 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/2.png',
+
 		price: {
 			amount: 3689,
 			currency: 'PLN',
@@ -142,7 +149,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [productFeatures[1], productFeatures[2], productFeatures[3]],
 		energyClass: 'C',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -155,6 +162,8 @@ export const PRODUCTS: Product[] = [
 		id: 3,
 		name: 'WW90T754ABT, Pralka QuickDrive™, 9 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/3.png',
+
 		price: {
 			amount: 3099,
 			currency: 'PLN',
@@ -166,7 +175,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [productFeatures[0], productFeatures[3]],
 		energyClass: 'D',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -179,6 +188,8 @@ export const PRODUCTS: Product[] = [
 		id: 4,
 		name: 'WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/4.png',
+
 		price: {
 			amount: 3199,
 			currency: 'PLN',
@@ -190,7 +201,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [productFeatures[3]],
 		energyClass: 'E',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -203,6 +214,8 @@ export const PRODUCTS: Product[] = [
 		id: 5,
 		name: 'WW90T654DLH, Pralka EcoBubble™, 8 kg, biała',
 		category: 'pralki',
+		imgSrc: '/images/products/5.png',
+
 		price: {
 			amount: 2999,
 			currency: 'PLN',
@@ -214,7 +227,7 @@ export const PRODUCTS: Product[] = [
 			capacityKg: 8,
 			dimensions: '55 x 60 x 85 cm',
 		},
-		features: [...(CATEGORY_CONFIG.pralki?.productFeatures ?? [])],
+		features: [...productFeatures],
 		energyClass: 'F',
 		installmentPlan: {
 			monthlyAmount: 53.31,
@@ -222,5 +235,135 @@ export const PRODUCTS: Product[] = [
 			currency: 'PLN',
 		},
 		popularity: 0.3,
+	},
+	{
+		id: 6,
+		name: 'WW90T754ABT, Pralka QuickDrive™, 9 kg, biała',
+		category: 'pralki',
+		imgSrc: '/images/products/0.png',
+
+		price: {
+			amount: 3799,
+			currency: 'PLN',
+			validFrom: new Date('2022-09-15'),
+			validTo: new Date('2022-09-21'),
+		},
+		specifications: {
+			color: 'biały',
+			capacityKg: 9,
+			dimensions: '55 x 60 x 85 cm',
+		},
+		features: [productFeatures[0], productFeatures[3]],
+		energyClass: 'A',
+		installmentPlan: {
+			monthlyAmount: 53.31,
+			months: 60,
+			currency: 'PLN',
+		},
+		popularity: 0.3,
+	},
+	{
+		id: 7,
+		name: 'WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała',
+		category: 'pralki',
+		imgSrc: '/images/products/1.png',
+
+		price: {
+			amount: 2999,
+			currency: 'PLN',
+			validFrom: new Date('2022-09-15'),
+			validTo: new Date('2022-09-21'),
+		},
+		specifications: {
+			color: 'biały',
+			capacityKg: 10.5,
+			dimensions: '55 x 60 x 85 cm',
+		},
+		features: [productFeatures[1], productFeatures[2], productFeatures[3]],
+		energyClass: 'B',
+		installmentPlan: {
+			monthlyAmount: 53.31,
+			months: 60,
+			currency: 'PLN',
+		},
+		popularity: 0.2,
+	},
+	{
+		id: 8,
+		name: 'WW90T654DLH, Pralka EcoBubble™, 9 kg, biała',
+		category: 'pralki',
+		imgSrc: '/images/products/2.png',
+
+		price: {
+			amount: 3689,
+			currency: 'PLN',
+			validFrom: new Date('2022-09-15'),
+			validTo: new Date('2022-09-21'),
+		},
+		specifications: {
+			color: 'biały',
+			capacityKg: 9,
+			dimensions: '55 x 60 x 85 cm',
+		},
+		features: [productFeatures[1], productFeatures[2], productFeatures[3]],
+		energyClass: 'C',
+		installmentPlan: {
+			monthlyAmount: 53.31,
+			months: 60,
+			currency: 'PLN',
+		},
+		popularity: 0.8,
+	},
+	{
+		id: 9,
+		name: 'WW90T754ABT, Pralka QuickDrive™, 9 kg, biała',
+		category: 'pralki',
+		imgSrc: '/images/products/3.png',
+
+		price: {
+			amount: 3099,
+			currency: 'PLN',
+			validFrom: new Date('2022-09-15'),
+			validTo: new Date('2022-09-21'),
+		},
+		specifications: {
+			color: 'biały',
+			capacityKg: 9,
+			dimensions: '55 x 60 x 85 cm',
+		},
+		features: [productFeatures[0], productFeatures[3]],
+		energyClass: 'D',
+		installmentPlan: {
+			monthlyAmount: 53.31,
+			months: 60,
+			currency: 'PLN',
+		},
+		popularity: 0.4,
+	},
+	{
+		id: 10,
+		name: 'WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała',
+		category: 'pralki',
+		imgSrc: '/images/products/4.png',
+
+		price: {
+			amount: 3199,
+			currency: 'PLN',
+			validFrom: new Date('2022-09-15'),
+			validTo: new Date('2022-09-21'),
+		},
+		specifications: {
+			color: 'biały',
+			capacityKg: 10.5,
+			dimensions: '55 x 60 x 85 cm',
+		},
+		features: [productFeatures[3]],
+		energyClass: 'E',
+		installmentPlan: {
+			monthlyAmount: 53.31,
+			months: 60,
+			currency: 'PLN',
+		},
+		popularity: 0.4,
 	},
 ];
