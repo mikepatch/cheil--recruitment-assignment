@@ -19,8 +19,11 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 	};
 
 	return (
-		<div className="rounded-2xl bg-white px-6 py-4 flex flex-col">
-			<ProductCardHeader productId={product.id} productName={product.name} />
+		<div className="flex flex-col rounded-2xl bg-white px-6 py-4">
+			<ProductCardHeader
+				productName={product.name}
+				productImgSrc={product.imgSrc}
+			/>
 			<section className="text-xs">
 				<ProductCardSpecs productData={product} />
 				<ProductCardEnergyLabel energyClass={product.energyClass} />

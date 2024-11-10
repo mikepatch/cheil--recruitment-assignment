@@ -15,6 +15,7 @@ export type Product = {
 	id: number;
 	name: string;
 	category: Category;
+	imgSrc: string;
 	price: ProductPrice;
 	specifications: BaseProductSpec;
 	features?: ProductFeature[];

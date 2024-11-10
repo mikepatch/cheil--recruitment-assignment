@@ -1,5 +1,7 @@
+import { type Product } from '@/types';
+
 type ProductCardEnergyLabelProps = {
-	energyClass: string;
+	energyClass: Product['energyClass'];
 };
 
 export const ProductCardEnergyLabel = ({ energyClass }: ProductCardEnergyLabelProps) => {
