@@ -11,8 +11,21 @@ export const ProductListing = () => {
 	const initialProductsCount = 6;
 	const [displayedProducts, setDisplayedProducts] = useState<Product[]>([]);
 	const [visibleProductsCount, setVisibleProductsCount] = useState<number>(initialProductsCount);
+	const [isLoading, setIsLoading] = useState(true);
 
 	const areMoreProducts = displayedProducts.length < products.length;
+
+	// I decided to simulate the fetching data from server to demonstrate skeletons.
+	useEffect(() => {
+		setIsLoading(true);
+
+		const timer = setTimeout(() => {
+			setDisplayedProducts(products.slice(0, visibleProductsCount));
+			setIsLoading(false);
+		}, 800);
+
+		return () => clearTimeout(timer);
+	}, []);
 
 	useEffect(() => {
 		setDisplayedProducts(products.slice(0, visibleProductsCount));
@@ -27,7 +40,7 @@ export const ProductListing = () => {
 	return (
 		<section className="flex flex-col">
 			<ResultsCounter resultsCount={products.length} />
-			<ProductList products={displayedProducts} />
+			<ProductList products={displayedProducts} isLoading={isLoading} />
 			{areMoreProducts ? <LoadMoreButton onClick={handleLoadMore} /> : ''}
 		</section>
 	);
