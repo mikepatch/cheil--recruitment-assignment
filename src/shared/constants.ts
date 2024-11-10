@@ -62,7 +62,6 @@ export const CATEGORY_CONFIG: Partial<Record<Category, CategoryConfig>> = {
 			},
 		],
 		specificationAttributes: [
-			{ id: 'color', label: 'Kolor' },
 			{
 				id: 'capacityKg',
 				label: 'Pojemność (kg)',
@@ -93,7 +92,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -119,7 +117,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -145,7 +142,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -171,7 +167,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -197,7 +192,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -223,7 +217,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 8,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -249,7 +242,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -275,7 +267,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -301,7 +292,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -327,7 +317,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 9,
 			dimensions: '55 x 60 x 85 cm',
 		},
@@ -353,7 +342,6 @@ export const PRODUCTS: Product[] = [
 			validTo: '2022-09-21',
 		},
 		specifications: {
-			color: 'biały',
 			capacityKg: 10.5,
 			dimensions: '55 x 60 x 85 cm',
 		},
