@@ -86,7 +86,6 @@ npm run dev
 2. **Performance Optimizations**
 
    - Debounced search input
-   - Lazy loading images
    - Incremental product loading
 
 3. **Type Safety**
